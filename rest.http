@@ -1,0 +1,30 @@
+### lista os filmes
+GET http://localhost:3000/filmes
+
+###
+
+POST http://localhost:3000/filmes
+Content-Type: application/json
+
+{
+  "nome": "Avatar: O Caminho da Água",
+  "genero": "Ficção Científica",
+  "duracao": 192,
+  "classificacao": "14+"
+}
+
+
+### 
+PUT http://localhost:3000/filmes/1
+Content-Type: application/json
+
+{
+  "nome": "Obsessão (Edição Especial)",
+  "genero": "Terror/Suspense",
+  "duracao": 148,
+  "classificacao": "16+"
+}
+
+###
+
+DELETE http://localhost:3000/filmes/1
